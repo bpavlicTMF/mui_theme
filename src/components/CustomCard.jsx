@@ -52,7 +52,7 @@ export default function CustomCard() {
       <CardMedia
         component='img'
         height='194'
-        image={'/paella.jpg'}
+        image='/paella.jpg'
         alt='Paella dish'
       />
       <CardContent>
