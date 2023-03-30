@@ -15,7 +15,6 @@ export const theme = createTheme({
       },
     },
   },
-
   typography: {
     h1: {
       fontSize: '42px',
@@ -41,13 +40,6 @@ export const theme = createTheme({
   },
 
   components: {
-    MuiButton: {
-      styleOverrides: {
-        root: {
-          borderRadius: '12.8451px 0px',
-        },
-      },
-    },
     MuiCard: {
       styleOverrides: {
         root: {
