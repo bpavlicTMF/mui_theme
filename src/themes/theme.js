@@ -55,5 +55,14 @@ export const theme = createTheme({
         },
       },
     },
+    MuiTextField: {
+      styleOverrides: {
+        root: {
+          '& .MuiOutlinedInput-root': {
+            borderRadius: '12.8451px 0px',
+          },
+        },
+      },
+    },
   },
 });

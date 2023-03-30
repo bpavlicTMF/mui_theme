@@ -1,11 +1,10 @@
 import CustomCard from '@/components/CustomCard';
 import NavBar from '@/components/NavBar';
-import { Box, Typography } from '@mui/material';
+import { Box, Paper, TextField, Typography, styled } from '@mui/material';
 import Button from '@mui/material/Button';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import LizardCard from '@/components/LizardCard';
 import CustomizedBreadcrumbs from '@/components/CustomizedBreadcrumbs';
-import Pagination from '@mui/material/Pagination';
 import IndeterminateCheckbox from '@/components/IndeterminateCheckbox';
 
 export default function Home() {
@@ -29,15 +28,6 @@ export default function Home() {
         <IndeterminateCheckbox />
 
         <Box>
-          <Typography variant='h1'>I am h1</Typography>
-          <Typography variant='h2'>I am h2</Typography>
-          <Typography variant='h3'>I am h3</Typography>
-          <Typography variant='h4'>I am h4</Typography>
-          <Typography variant='h5'>I am h5</Typography>
-        </Box>
-        <Box>
-          <Button variant='contained'>Button</Button>
-          <Button variant='oulined'>Button</Button>
           <Button startIcon={<ArrowRightAltIcon />} variant='oulined'>
             Button
           </Button>
@@ -46,6 +36,20 @@ export default function Home() {
           </Button>
         </Box>
         <LizardCard />
+        <Box
+          sx={{
+            '& .MuiTextField-root': { m: 1, width: '25ch' },
+          }}
+        >
+          <Paper
+            elevation={3}
+            sx={{ padding: 2, display: 'grid', placeItems: 'center' }}
+          >
+            <TextField label='First Name' variant='outlined' />
+            <TextField label='Last Name' variant='outlined' />
+            <Button variant='contained'>apply</Button>
+          </Paper>
+        </Box>
       </Box>
     </>
   );
